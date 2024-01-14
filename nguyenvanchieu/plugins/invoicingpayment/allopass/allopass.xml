@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="invoicingpayment" method="upgrade" client="site">
+	<name>Invoicing AlloPass Payment Plugin</name>
+	<creationDate>September 2013</creationDate>
+	<version>1.1.9</version>
+	<author>JoomPROD</author>
+	<authorEmail>webmaster@joomprod.com</authorEmail>
+	<authorUrl>http://www.joomprod.com</authorUrl>
+	<copyright>Copyright (C) 2010-2012 JoomPROD - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>This plugin enables you to setup your Paypal payment system</description>
+	<files>
+		<filename plugin="allopass">allopass.php</filename>
+		<filename>allopass.xml</filename>
+		<folder>allopass</folder>
+		<filename>index.html</filename>
+	</files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="title" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_TITLE_LABEL" description="PLG_INVOICINGPAYMENT_TITLE_DESC"/>
+				<field name="image" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_IMAGE_LABEL" description="PLG_INVOICINGPAYMENT_IMAGE_DESC" />
+				<field type="spacer" />
+				<field name="siteid" type="text" size="50" default="" label="Site ID" description=""/>
+                <field type="spacer" />
+                <field name="productmatch" type="textarea" default="" label="Product ID Mapping" description="" rows="5" cols="30" />
+                <field type="spacer" />
+                <field name="key" type="text" size="50" default="" label="API Key" description=""/>
+				<field name="skey" type="text" size="50" default="" label="API Key Secret" description=""/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

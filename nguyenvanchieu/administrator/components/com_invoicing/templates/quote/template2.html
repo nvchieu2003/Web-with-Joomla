@@ -1,0 +1,126 @@
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+  <tbody>
+		<tr valign="top"> 
+			<td>
+				<a href="{url_site}" target="_blank"><img style="max-width : 300px;max-height : 300px" class="logo_vendor" alt="logo" src="{vendor_logo}" /></a>
+			</td>
+			<td colspan="1" align="right">
+			<strong><span style="font-size:30px;">[COM_INVOICING_TITLE_QUOTES] {quote_number}</span></strong><br/>
+			<strong>[INVOICING_COMMON_DATE] : {quote_date}</strong><br/>
+			</td>
+		 </tr> 
+
+	</tbody>
+	
+</table>
+<hr color="lavender" style="height:2px;"/>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+	<tbody>
+	<tr>
+		<td align="center" width="50%" valign="top"><strong>[INVOICING_COMMON_VENDOR]</strong></td><br/>
+		<td align="center" width="50%" valign="top"><strong>[INVOICING_COMMON_CONTACTS]</strong></td>
+	</tr>
+	<tr>
+		<td width="50%" align="left">
+			<strong>{vendor_company_name}</strong><br/>
+			{vendor_contact_name}<br/>
+			{vendor_company_email}<br/>
+			{vendor_company_phone}<br/>
+			{vendor_company_url}<br/>
+			{vendor_address1}<br/>
+			{vendor_address2}<br/>
+			{vendor_city}
+			{vendor_country}
+		</td>
+               
+		<td align="left" width="50%" valign="top">
+		    <strong>{customer_id}</strong><br/>
+		    <strong><a href="mailto:{customer_email}" target="_blank">{customer_name}</a></strong><br/>
+			{customer_name}<br/>
+			{customer_occupation}<br/>
+			{customer_address1}<br/>
+			{customer_address2}<br/>
+			{customer_city}<br/>
+			{customer_zip}
+			{customer_country}
+		</td>
+	</tbody>
+</table>
+<hr color="lavender" style="height:2px;"/>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td style="padding-top:0; padding-bottom:0;" valign="top">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border : 1px solid #DDDDDD;">
+					<tbody>
+						<tr>
+							<th style="background-color:lavender;" valign="top" width="15%">
+								[INVOICING_COMMON_DESCRIPTION]
+							</th>
+							<th style="background-color:lavender;" valign="top" width="15%">
+								[INVOICING_COMMON_UNIT_PRICE]
+							</th>
+							<th style="background-color:lavender;" valign="top" width="15%">
+								[INVOICING_COMMON_QUANTITY]
+							</th>
+							<th style="background-color:lavender;" valign="top" width="15%">
+								[INVOICING_COMMON_TAX]
+							</th>
+							<th style="background-color:lavender;" valign="top" width="15%">
+								[INVOICING_COMMON_UNIT_PRICE]
+							</th>
+						</tr>
+						{item_start}
+						<tr>
+							<td  valign="top">
+								{item_name}
+							</td>
+							<td align="center" valign="top">
+								{item_net_unit_price}
+							</td>
+							<td align="center" valign="top">
+								{item_quantity}
+							</td>
+							<td align="center" valign="top">
+								{item_tax}
+							</td>
+							<td align="center" valign="top">
+								{item_net_amount}
+							</td>
+						</tr> 
+						{item_end}
+						<tr><td><br/></td></tr>
+						<tr>
+							<td align="right" width="90%" valign="top" colspan="5">[INVOICING_DISCOUNT_TTC] : {quote_gross_discount_amount}</td>
+						</tr>
+						<tr>
+							<td align="right" width="90%" valign="top" colspan="5">[INVOICING_COMMON_AMOUNT_WITHOUT_TAX] : {quote_net_amount}</td>
+						</tr>
+						<tr>
+							<td align="right" width="90%" valign="top" colspan="5">[INVOICING_COMMON_TAX] : {quote_tax_amount}</td>
+						</tr>
+						<tr>
+							<td style="background-color:lavender;" align="right" width="90%" valign="top" colspan="5"><strong>[INVOICING_COMMON_AMOUNT_WITH_TAX] : {quote_gross_amount}</strong></td>
+						</tr>	
+					</tbody>
+				</table>
+				<br/>
+				<hr color="lavender" style="height:2px;"/>
+				<br/>
+				<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border : 1px solid #DDDDDD;">
+					<tbody>
+						<tr>
+							<td style="background-color:lavender;" align="left" valign="top">
+								<strong>[INVOICING_INVOICE_NOTES]</strong>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" width="10%" valign="top">{quote_notes}<br/>{quote_coupon}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+	

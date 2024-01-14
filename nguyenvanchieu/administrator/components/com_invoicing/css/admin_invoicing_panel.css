@@ -1,0 +1,163 @@
+.com_invoicing .nav-tabs a {
+    display: block;
+    height: 50px;
+    padding-top: 13px;
+    text-decoration: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #dee2e6;
+    border-bottom: 0;
+}
+.com_invoicing .nav-tabs li {
+    margin-right: 15px;
+}
+.com_invoicing .nav-tabs li a.active, .com_invoicing .nav-tabs li a:hover{ 
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #dee2e6;
+}
+.com_invoicing .chosen-container,
+.com_adsmanager .chzn-container {
+    min-width:15em !important;
+    margin-bottom: 10px;
+
+}
+
+.com_invoicing .chosen-container-single .chosen-single,
+.com_adsmanager .chzn-container{
+    height: 40px;
+    line-height: 40px;;
+}
+
+.com_invoicing .chosen-container-single .chosen-single div b{
+    background-position: 0 10px;
+}
+
+.com_invoicing .chosen-container-active.chosen-with-drop .chosen-single div b{
+    background-position: 0 10px;
+}
+
+.com_invoicing #params_nb_ads_by_user_groups {
+    margin-right: 1em;
+}
+.com_invoicing .nav.nav-tabs {
+    background-color: transparent;
+    border-bottom: 1px solid #dee2e6;
+}
+.com_invoicing .nav.nav-tabs {
+    justify-content: normal;
+}
+
+/* 2022 */
+
+.btn-group-yesno .form-check + .form-check{
+    margin-left: 12px;
+}
+
+span.aside-desc,
+p.aside-desc {
+    display: block;
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.filter-select.fltrt{
+    margin-bottom: 12px;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+
+.filter-select.fltrt > *{
+    width: auto;
+    margin-bottom: 8px;
+}
+
+.filter-select.fltrt > * + *{
+    margin-left: 8px;
+}
+
+.adminForm-search-bar{
+    margin-bottom: 16px;
+}
+
+.adminForm-search-bar .btn span[class*="icon-"]{
+    margin-right: 8px;
+}
+
+.table-long,
+.table-long thead,
+.table-long tbody,
+.table-long tfoot{
+    display: block;
+    width: 100%;
+}
+
+.table-long{
+    overflow: scroll;
+    max-height: 400px;
+    max-width: calc(100vw - 370px);
+}
+
+.table-long tr{
+    display: flex;
+    width: 100%;
+}
+
+.table-long  tr > *{
+    flex: 1;
+    white-space: initial !important;
+    word-break: break-word;
+    min-width: 95px;
+    text-align: left;
+}
+
+.table-long tr > *:first-child:not(:only-child){
+    position: sticky;
+    left: 0;
+    border-right: 2px solid rgba(0,0,0,0.1);
+}
+
+.table-long tr > *:last-child:not(:only-child){
+    position: sticky;
+    right: 0;
+    border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+.table-long .small-th,
+.table-long .small-td{
+    min-width: 60px;
+}
+
+.table-long tr > th:first-child,
+.table-long tr > th:last-child{
+    top: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.table-long thead{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.15);
+}
+
+
+form#adminForm {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+}

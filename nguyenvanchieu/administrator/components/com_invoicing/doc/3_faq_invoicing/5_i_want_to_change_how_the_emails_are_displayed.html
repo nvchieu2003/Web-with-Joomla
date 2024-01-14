@@ -1,0 +1,210 @@
+<h1>I want to change how the emails are displayed</h1>
+<p>
+    Of course you can. You only need to click on the "Emails" tab 
+    to display the list of preconfigured emails. You can't add one, 
+    just modify them taking consideration when they are triggered. 
+    You can see two kinds of emails the one sent to administrator 
+    as displays on the "Configuration" of Invoicing or in Joomla! 
+    with "Admin' in brackets. You can enable or disable individually 
+    each email on the view list. Please considerer that every 
+    email (Admin et other) corresponds to a predifined status 
+    except for the "CANCELLED" status.
+</p>
+<h2>Edition of email and templating</h2>
+<p>
+    The edition interface is really eays to understand, you can 
+    modify description and content. The tag list on the right 
+    deserves a little bit more explanation.You will find the list 
+    of the available tags and a short description for each of 
+    them if the table below. The tags are translationable in the 
+    languages files. To translate them you have to write them 
+    surrounded by brackets like this [invoice_number] and modify 
+    what's displayed if needed, in my Example [invoice_number] 
+    will display "Numéro de facture" cause i'm in French.
+</p>
+<table border="0">
+<tbody>
+<tr>
+<td>{vendor_contact_name}</td>
+<td>&nbsp;Nom du vendeur</td>
+</tr>
+<tr>
+<td>{vendor_company_name}</td>
+<td>&nbsp;Nom de la société du vendeur</td>
+</tr>
+<tr>
+<td>{vendor_company_email}</td>
+<td>&nbsp;Email de la société du vendeur</td>
+</tr>
+<tr>
+<td>{vendor_company_url}</td>
+<td>
+<p>&nbsp;Lien du site web du vendeur</p>
+</td>
+</tr>
+<tr>
+<td>{vendor_company_phone}</td>
+<td>&nbsp;Numéro de téléphone du vendeur</td>
+</tr>
+<tr>
+<td>{vendor_address1}</td>
+<td>&nbsp;Adresse principale du vendeur</td>
+</tr>
+<tr>
+<td>{vendor_address2}</td>
+<td>&nbsp;Adresse secondaire du vendeur</td>
+</tr>
+<tr>
+<td>{vendor_notes}</td>
+<td>&nbsp;Notes du vendeur</td>
+</tr>
+<tr>
+<td>{vendor_city}</td>
+<td>&nbsp;Ville du vendeur</td>
+</tr>
+<tr>
+<td>{vendor_zip}</td>
+<td>&nbsp;Code postal du vendeur</td>
+</tr>
+<tr>
+<td>{vendor_country}</td>
+<td>&nbsp;Pays du vendeur</td>
+</tr>
+<tr>
+<td>{vendor_logo}</td>
+<td>&nbsp;Logo du vendeur</td>
+</tr>
+<tr>
+<td>{url_site}</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>{customer_id}</td>
+<td>&nbsp;Id du client</td>
+</tr>
+<tr>
+<td>{customer_name}</td>
+<td>&nbsp;Nom du client</td>
+</tr>
+<tr>
+<td>{customer_occupation}</td>
+<td>&nbsp;Fonction du client</td>
+</tr>
+<tr>
+<td>{customer_address1}</td>
+<td>&nbsp;Adresse principale du client</td>
+</tr>
+<tr>
+<td>{customer_address2}</td>
+<td>&nbsp;Adresse secondaire du client</td>
+</tr>
+<tr>
+<td>{customer_notes}</td>
+<td>&nbsp;Notes du client</td>
+</tr>
+<tr>
+<td>{customer_city}</td>
+<td>&nbsp;Ville du client</td>
+</tr>
+<tr>
+<td>{customer_country}</td>
+<td>&nbsp;Pays du clent</td>
+</tr>
+<tr>
+<td>{customer_mail}</td>
+<td>&nbsp;Email du client</td>
+</tr>
+<tr>
+<td>{customer_zip}</td>
+<td>&nbsp;Code postal du client</td>
+</tr>
+<tr>
+<td>{url_invoice}</td>
+<td>&nbsp;Lien de la facture de l'email en cours</td>
+</tr>
+<tr>
+<td>{url_invoices}</td>
+<td>&nbsp;Lien de toutes les factures du client</td>
+</tr>
+<tr>
+<td>{url_payment}</td>
+<td>&nbsp;Lien pour payer la facture en cours</td>
+</tr>
+<tr>
+<td>{invoice_order_number}</td>
+<td>&nbsp;Le numéro de la commande</td>
+</tr>
+<tr>
+<td>{invoice_number}</td>
+<td>&nbsp;Le numéro de la facture</td>
+</tr>
+<tr>
+<td>{invoice_date}</td>
+<td>&nbsp;La date de la facture</td>
+</tr>
+<tr>
+<td>{invoice_due_date}</td>
+<td>&nbsp;La date d'échéance de la facture</td>
+</tr>
+<tr>
+<td>{invoice_status}</td>
+<td>&nbsp;L'état de la facture</td>
+</tr>
+<tr>
+<td>{invoice_net_discount_amount}</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>{invoice_gross_discount_amount}</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>{invoice_tax_discount_amount}</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>{invoice_gross_amount}</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>{invoice_tax_amount}</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>{invoice_net_amount}</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>{invoice_gross_subamount}</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>{invoice_tax_subamount}</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>{invoice_net_subamount}</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>{invoice_notes}</td>
+<td>&nbsp;Les notes de la facture</td>
+</tr>
+<tr>
+<td>{invoice_processor}</td>
+<td>&nbsp;Moyen de paiement de la facture</td>
+</tr>
+<tr>
+<td>{invoice_external_ref}</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>{invoice_coupon}</td>
+<td>&nbsp;Coupon utilisé dans la facture</td>
+</tr>
+<tr>
+<td>{invoice_external}</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>

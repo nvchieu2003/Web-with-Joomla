@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <params>
+        <param 
+            name="bootstrap_loading"
+            label="INVOICING_BOOTSTRAP_LOADING"
+            type="radio"
+            default="1">
+				<option value="1">INVOICING_BOOTSTRAP_LOADING_YES</option>
+				<option value="0">JNO</option>	
+		</param>
+        <param 
+            name="use_paymentimage"
+            label="INVOICING_USE_PAYMENTIMAGE"
+            type="radio"
+            default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>	
+		</param>
+		<param
+			name="date_format"
+			label="INVOICING_CONFIG_DATE_FORMAT"
+			type="text"
+			default="%Y-%m-%d" />
+		<param name="" type="spacer"/>
+		<param
+			name="invoice_number_counter"
+			type="text"
+			label="INVOICING_CONFIG_INVOICE_NUMBER_COUNTER"
+			default="1" />
+		<param
+			name="invoice_number_format"
+			type="text"
+			label="INVOICING_CONFIG_INVOICE_NUMBER_FORMAT"
+			default="%Y/%m/{invoice_number}" />
+		<param
+			name="order_number_counter"
+			type="text"
+			label="INVOICING_CONFIG_ORDER_NUMBER_COUNTER"
+			default="1" />
+		<param
+			name="order_number_format"
+			type="text"
+			label="INVOICING_CONFIG_ORDER_NUMBER_FORMAT"
+			default="C/%Y/%m/{order_number}" />
+		<param
+			name="quote_number_counter"
+			type="text"
+			label="INVOICING_CONFIG_QUOTE_NUMBER_COUNTER"
+			default="1" />
+		<param
+			name="quote_number_format"
+			type="text"
+			label="INVOICING_CONFIG_QUOTE_NUMBER_FORMAT"
+			default="%Y/%m/{quote_number}" />
+		<param
+			name="sender_mail"
+			type="text"
+			label="INVOICING_CONFIG_SENDER_MAIL"
+			description="INVOICING_CONFIG_SENDER_MAIL_DESCRIPTION"
+			default="" />
+		<param
+			name="sender_name"
+			type="text"
+			label="INVOICING_CONFIG_SENDER_NAME"
+			description="INVOICING_CONFIG_SENDER_NAME_DESCRIPTION"
+			default="" />
+		<param
+			name="itemid_profile"
+			type="text"
+			label="INVOICING_ITEMID_PROFILE"
+			description=""
+			default="" />
+        <param
+			name="itemid_invoice"
+			type="text"
+			label="INVOICING_ITEMID_INVOICE"
+			description=""
+			default="" />
+        <param 
+            name="enable_mandatory_profile_redirect"
+            label="INVOICING_PROFILE_REDIRECT"
+            type="radio"
+            default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>	
+		</param>
+		<param name="" type="spacer"/>
+        <param name="enable_coupon" type="radio" default="1" label="INVOICING_CONFIG_ENABLE_COUPON" description="INVOICING_CONFIG_ENABLE_COUPON_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+		</param>
+        <param name="" type="spacer"/>
+		<param 
+			name="csvformat" 
+			type="textarea" 
+			default="{invoice_number},{invoice_date},{customer_id},{customer_name},{customer_mail},{customer_occupation},{customer_address1},{customer_address2},{customer_zip},{customer_city},{customer_country},{vendor_company_name},{invoice_gross_amount},{invoice_tax_amount},{invoice_net_amount}" 
+			label="INVOICING_CONFIG_CSVFORMAT" 
+			description="INVOICING_CONFIG_CSVFORMAT_DESCRIPTION" 
+			rows="5" 
+			cols="100" />
+		<param name="" type="spacer"/>
+		<param 
+			name="cb"
+			label="INVOICING_CONFIG_CB" 
+			type="radio"
+			default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>	
+		</param>
+		<param
+			name="cb_address"
+			type="text"
+			label="INVOICING_CONFIG_CB_ADDRESS"
+			description=""
+			default="" />
+		<param
+			name="cb_address2"
+			type="text"
+			label="INVOICING_CONFIG_CB_ADDRESS2"
+			description=""
+			default="" />
+		<param
+			name="cb_zip"
+			type="text"
+			label="INVOICING_CONFIG_CB_ZIP"
+			description=""
+			default="" />
+		<param
+			name="cb_city"
+			type="text"
+			label="INVOICING_CONFIG_CB_CITY"
+			description=""
+			default="" />
+		<param
+			name="cb_country"
+			type="text"
+			label="INVOICING_CONFIG_CB_COUNTRY"
+			description=""
+			default="" />
+		<param
+			name="cb_mobile"
+			type="text"
+			label="INVOICING_USER_MOBILE"
+			description=""
+			default="" />
+		<param
+			name="cb_landline"
+			type="text"
+			label="INVOICING_USER_LANDLINE"
+			description=""
+			default="" />
+		<param
+			name="cb_notes"
+			type="text"
+			label="INVOICING_COMMON_NOTES"
+			description=""
+			default="" />
+        <param name="" type="spacer"/>
+		<param
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="form-control"
+			filter="rules"
+			component="com_invoicing"
+			section="component" />
+        <param name="" type="spacer"/>
+		<param name="jquery" type="radio" default="1" label="INVOICING_CONFIG_JQUERY" description="INVOICING_CONFIG_JQUERY_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+		</param>
+    </params>
+	<fieldset
+		name="params"
+		label="INVOICING_CONFIG_PARAMS"
+		description=""
+		>
+            <field 
+            name="bootstrap_loading"
+            label="INVOICING_BOOTSTRAP_LOADING"
+            type="radio"
+            default="1">
+				<option value="1">INVOICING_BOOTSTRAP_LOADING_YES</option>
+				<option value="0">JNO</option>	
+		</field>
+		<field 
+            name="use_paymentimage"
+            label="INVOICING_USE_PAYMENTIMAGE"
+            type="radio"
+            default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>	
+		</field>
+		<field
+			name="date_format"
+			label="INVOICING_CONFIG_DATE_FORMAT"
+			type="text"
+			default="%Y-%m-%d" />
+		<field name="" type="spacer"/>
+		<field
+			name="invoice_number_counter"
+			type="text"
+			label="INVOICING_CONFIG_INVOICE_NUMBER_COUNTER"
+			default="1" />
+		<field
+			name="invoice_number_format"
+			type="text"
+			label="INVOICING_CONFIG_INVOICE_NUMBER_FORMAT"
+			default="%Y/%m/{invoice_number}" />
+		<field
+			name="order_number_counter"
+			type="text"
+			label="INVOICING_CONFIG_ORDER_NUMBER_COUNTER"
+			default="1" />
+		<field
+			name="order_number_format"
+			type="text"
+			label="INVOICING_CONFIG_ORDER_NUMBER_FORMAT"
+			default="C/%Y/%m/{order_number}" />
+		<field
+			name="quote_number_counter"
+			type="text"
+			label="INVOICING_CONFIG_QUOTE_NUMBER_COUNTER"
+			default="1" />
+		<field
+			name="quote_number_format"
+			type="text"
+			label="INVOICING_CONFIG_QUOTE_NUMBER_FORMAT"
+			default="%Y/%m/{quote_number}" />
+		<field
+			name="sender_mail"
+			type="text"
+			label="INVOICING_CONFIG_SENDER_MAIL"
+			description="INVOICING_CONFIG_SENDER_MAIL_DESCRIPTION"
+			default="" />
+		<field
+			name="sender_name"
+			type="text"
+			label="INVOICING_CONFIG_SENDER_NAME"
+			description="INVOICING_CONFIG_SENDER_NAME_DESCRIPTION"
+			default="" />
+		<field
+			name="itemid_profile"
+			type="text"
+			label="INVOICING_ITEMID_PROFILE"
+			description=""
+			default="" />
+        <field
+			name="itemid_invoice"
+			type="text"
+			label="INVOICING_ITEMID_INVOICE"
+			description=""
+			default="" />
+        <field 
+            name="enable_mandatory_profile_redirect"
+            label="INVOICING_PROFILE_REDIRECT"
+            type="radio"
+            default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>	
+		</field>
+		<field name="" type="spacer"/>
+        <field name="enable_coupon" type="radio" default="1" label="INVOICING_CONFIG_ENABLE_COUPON" description="INVOICING_CONFIG_ENABLE_COUPON_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+		</field>
+        <field name="" type="spacer"/>
+		<field 
+			name="csvformat" 
+			type="textarea" 
+			default="{invoice_number},{invoice_date},{contact_name},{contact_number},{contact},{contact_address},{contact_email},{item_quantity}, {item_name}, {item_price}, {item_tax},{invoice_subtotal},{invoice_tax},{invoice_total}" 
+			label="INVOICING_CONFIG_CSVFORMAT" 
+			description="INVOICING_CONFIG_CSVFORMAT_DESCRIPTION" 
+			rows="5" 
+			cols="100" />
+		<field name="" type="spacer"/>
+	</fieldset>
+	<fieldset name="liveupdate" label="CONFIG_LIVEUPDATE_HEADER_LABEL" description="CONFIG_LIVEUPDATE_HEADER_DESC"
+	    addfieldpath="/administrator/components/com_invoicing/Model/fields">
+		<field name="update_dlid" type="UpdateServer" default="" size="30"
+			label="CONFIG_DOWNLOADID_LABEL"
+			description ="CONFIG_DOWNLOADID_DESC" />
+	 </fieldset>
+	<fieldset
+		name="communitybuilder"
+		label="INVOICING_CONFIG_COMMUNITY_BUILDER"
+		description=""
+		>
+		<field 
+			name="cb"
+			label="INVOICING_CONFIG_CB" 
+			type="radio"
+			default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>	
+		</field>
+		<field
+			name="cb_address"
+			type="text"
+			label="INVOICING_CONFIG_CB_ADDRESS"
+			description=""
+			default="" />
+		<field
+			name="cb_address2"
+			type="text"
+			label="INVOICING_CONFIG_CB_ADDRESS2"
+			description=""
+			default="" />
+		<field
+			name="cb_zip"
+			type="text"
+			label="INVOICING_CONFIG_CB_ZIP"
+			description=""
+			default="" />
+		<field
+			name="cb_city"
+			type="text"
+			label="INVOICING_CONFIG_CB_CITY"
+			description=""
+			default="" />
+		<field
+			name="cb_country"
+			type="text"
+			label="INVOICING_CONFIG_CB_COUNTRY"
+			description=""
+			default="" />
+		<field
+			name="cb_mobile"
+			type="text"
+			label="INVOICING_USER_MOBILE"
+			description=""
+			default="" />
+		<field
+			name="cb_landline"
+			type="text"
+			label="INVOICING_USER_LANDLINE"
+			description=""
+			default="" />R
+		<field
+			name="cb_notes"
+			type="text"
+			label="INVOICING_COMMON_NOTES"
+			description=""
+			default="" />
+	</fieldset>	
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="form-control"
+			filter="rules"
+			component="com_invoicing"
+			section="component" />
+	</fieldset>	
+	<fieldset
+		name="javascript"
+		label="Javascript"
+		description=""
+		>
+		<field name="jquery" type="radio" default="1" label="INVOICING_CONFIG_JQUERY" description="INVOICING_CONFIG_JQUERY_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+		</field>
+	</fieldset>
+</config>

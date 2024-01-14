@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" version="2.5" method="upgrade">
+	<name>Module Tỷ Giá và Giá Vàng</name>
+	<creationDate>06-02-2020</creationDate>
+	<author>Nguyễn Thị Phương Thy</author>
+	<copyright>Nguyễn Thị Phương Thy</copyright>
+	<license>GNU/GPL, http://www.gnu.org/licenses/gpl.html</license>
+	<authorEmail>ntpthi@kgc.edu.vn</authorEmail>
+	<authorUrl>https://www.facebook.com/nguyen.t.thy.10</authorUrl>
+	<version>1.9</version>
+	<description>
+	<![CDATA[
+	<p>Module Tỷ giá và Giá vàng được edit bởi Giảng viên Nguyễn Thị Phương Thy ngày 06/02/2020</br>
+		Hiển thị Tỷ giá và Giá vàng</br>
+		Nguồn dữ liệu từ Vietcombank hoặc Eximbank.
+	</p>
+	]]>
+</description>
+	<files>
+		<filename module="mod_vp_tygia">functions.php</filename>		
+		<filename module="mod_vp_tygia">index.html</filename>
+		<filename module="mod_vp_tygia">mod_vp_tygia.php</filename>
+		<folder>css/</folder>	
+		<folder>images/</folder>
+		<folder>tmpl/</folder>
+		<folder>xml/</folder>
+	</files>
+	<updateservers>
+        <server type="extension" priority="1" name="Ty Gia Module">http://vietpublic.net/ext/xml/tygia.xml</server>
+    </updateservers>
+	<config>
+		<fields name="params"> 
+			<fieldset name="nameRate" label="Cấu hình">		
+				<field name="ShowNguon" type="radio" label="Nguồn lấy dữ liệu" description="Nguồn lấy dữ liệu từ Vietcombank hoặc Eximbank(Hiện tại chỉ hỗ trợ lấy dữ liệu của Vietcombank nhanh hơn)" default="1">
+					<option	value="1">Vietcombank</option>
+					<option	value="0">Eximbank</option>
+				</field>
+				<field name="RateInterval" type="text" default="43200" label="Thời gian lấy lại dữ liệu (giây)" description="43200 tương đương 12 giờ, không nhập số âm, không đặt quá 24 giờ" />
+				<field name="ShowTyGia" type="list" label="Hiển thị tỷ giá" description="Hiển thị tỷ giá ngoại tệ so với tiền đồng" default="1">
+					<option	value="1">Đồng ý</option>
+					<option	value="0">Không</option>
+				</field>	
+				<field name="ShowTyGiaTitle" type="radio" label="Hiển thị tiêu đề TỶ GIÁ" description="Hiển thị/ẩn tiêu đề TỶ GIÁ" default="1">
+					<option	value="1">Đồng ý</option>
+					<option	value="0">Không</option>
+				</field>
+				<field name="ShowGiaVang" type="list" label="Hiển thị giá vàng" description="Hiển thị giá vàng SJC 99,99" default="0">
+					<option	value="1">Đồng ý</option>
+					<option	value="0">Không</option>
+				</field>	
+				<field name="ShowGiaVangTitle" type="radio" label="Hiển thị tiêu đề GIÁ VÀNG" description="Hiển thị/ẩn tiêu đề TỶ GIÁ" default="1">
+					<option	value="1">Đồng ý</option>
+					<option	value="0">Không</option>
+				</field>
+				<field name="ShowCopyright" type="list" label="Hiển thị nguồn thông tin" description="Hiển thị nguồn lấy thông tin" default="1">
+					<option	value="1">Đồng ý</option>
+					<option	value="0">Không</option>
+				</field>				
+			</fieldset>	
+			<fieldset name="advanced" lable="Tùy chọn nâng cao">
+				<field name="cache" type="list" default="1" label="Bộ nhớ đệm" description="Bộ nhớ đệm của mô đun">
+					<option value="0">Không dùng</option>
+					<option value="1">Dùng chung</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="Thời gian lưu" description="Thời gian lưu trong bộ nhớ đệm" />
+				<field name="admin_modified" type="hidden" default="1" />
+			</fieldset>
+		</fields>
+	</config>	
+</extension>

@@ -1,0 +1,154 @@
+body {
+margin : 0;
+}
+
+.icon-48-invoicing {
+    background: url("../images/logo.png") no-repeat scroll 0 0 transparent !important;
+}
+
+#invoice-container {
+width : 900px;
+margin-left : auto;
+margin-right : auto;
+}
+
+#details {
+float : left;
+}
+
+#contacts {
+float : right;
+width : 400px;
+}
+
+#products {
+clear : both;
+}
+
+#discount {
+clear : both;
+}
+
+#notes {
+float : left;
+width : 400px;
+}
+
+#total {
+float : right;
+width : 400px;
+}
+
+legend {
+color : blue;
+font-size : 1.1em;
+}
+
+ul {
+list-style-type : none;
+}
+
+#sort td {
+padding : 50 50;
+}
+
+#subtotal {
+float : right;
+}
+
+.sendMailToClient {
+display : none;
+}
+
+.PDFAttachment {
+display : none;
+}
+
+/* Fixes for display */
+.hideToAdjust {
+visibility : hidden;
+}
+
+.logo_vendor {
+max-width : 150px;
+max-height : 150px;
+}
+
+/* Error display with validate.js */
+label.error{
+color : #B94A48;
+}
+
+input.required {
+border-color: #B94A48;
+}
+
+
+/* Button to see the invoice in modal display */
+#seeInvoiceLink {
+font-weight:bold;
+font-size : 15px;
+display : block;
+}
+
+#mailInvoice {
+font-weight:bold;
+font-size : 15px;
+display : block;
+}
+
+#send_pic_actions{
+  float : left;
+  background-image: url(../images/invoices/icon-32-messaging.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+#see_pic_actions{
+  float : left;
+  background-image: url(../images/invoices/icon-32-article.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+#pdf_pic_actions{
+  float : left;
+  background-image: url(../images/invoices/pdf.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+#pay_pic_actions{
+  float : left;
+  background-image: url(../images/invoices/payment-icon32.png);
+  background-position: 0px 0x;
+  width: 32px;
+  height: 32px;
+}
+
+#print_pic_actions{
+  position : absolute;
+  right : 0px;
+  background-image: url("../images/invoices/icon-32-print.png");
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+#pic_actions {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px; 
+}
+
+.ui-icon-cancel:hover {
+	cursor:pointer	
+}
+
+#filterDiv {
+position : absolute;
+left : 500px;
+}

@@ -1,0 +1,174 @@
+<style type="text/css">
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5em;
+}
+h3{
+    margin-bottom: 3mm;
+    color: #16a4ec;
+}
+h5{
+    font-size: 12pt;
+    margin-bottom: 2mm;
+}
+page{
+    color: #595959;
+}
+.invoiceId{
+    margin-top: 40mm;
+    margin-left: 10mm;
+}
+.fromCont{
+    margin-left: 10mm;
+}
+.totalCont{
+    margin-top: 10mm;
+    width: 100%;
+}
+.fromCont{
+    margin-top: 10mm;
+}
+.fromCont td{
+    width: 90mm;
+}
+.invoiceCont{
+    margin-top: 10mm;
+}
+th{
+    background: #16a4ec;
+    color: #ffffff;
+    padding: 5mm 5mm 2mm 5mm;
+}
+.invoiceCont td, .totalCont td{
+    padding: 5mm;
+}
+td.bordered, .invoiceCont td{
+    border-bottom: 1px solid #e0e0e0;
+}
+th.firstCell, td.firstCell{
+    text-align: left;
+    padding: 5mm 5mm 5mm 10mm;
+}
+.notesCont{
+    margin-top: 10mm;
+    padding-left: 10mm;
+}
+.totalRow td{
+    font-size: 16pt;
+    font-weight: bold;
+    line-height: 16pt;
+    padding-bottom: 0mm;
+}
+</style>
+<page>
+    <div class="invoiceId">
+        <table width="80%"><tr><td width="100%">
+<img src="{vendor_logo}" />
+</td><td width="50%"  class="logo" >
+   <h5>[INVOICING_COMMON_ORDER] {invoice_number}</h5>
+        <br>
+        <span>[INVOICING_COMMON_DATE] {invoice_date}</span>
+</tr>
+</table>
+    </div>
+    <div class="fromCont">
+        <table width="100%">
+            <tr>
+                <td>
+                    [INVOICING_COMMON_VENDOR]
+                    <h3>{vendor_company_name}</h3>
+                    <p>
+                    {vendor_address1} {vendor_address2}<br>
+                    {vendor_city}<br/>
+                    {vendor_country}
+                    </p>
+                </td>
+                <td>
+                    [INVOICING_CUSTOMER_INFORMATION]
+                    <h3>{customer_name}</h3>
+                    <p>
+                        {customer_address1} {customer_address2}<br>
+                        {customer_zip} {customer_city}<br>
+                        {customer_country}
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="invoiceCont">
+        <table style="width:100%;">
+            <thead>
+                <tr>
+                    <th style="width:40%;" class="firstCell">
+                        [INVOICING_COMMON_DESCRIPTION]
+                    </th>
+                    <th style="width:18%;" align="left">
+                        [INVOICING_COMMON_UNIT_PRICE]
+                    </th>
+                    <th style="width:12%;" align="left">
+                        [INVOICING_COMMON_QUANTITY]
+                    </th>
+                    <th style="width:30%;" align="right">
+                        [INVOICING_COMMON_UNIT_PRICE]
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {item_start}
+                <tr>
+                    <td class="firstCell">
+                        {item_name}
+                    </td>
+                    <td>
+                        {item_net_unit_price}
+                    </td>
+                    <td>
+                        {item_quantity}
+                    </td>
+                    <td align="right">
+                        {item_net_amount}
+                    </td>
+                </tr>
+                {item_end}
+            </tbody>
+        </table>
+    </div>
+    <div class="totalCont">
+        <table style="width:100%;">
+            <tbody>
+                <tr>
+                    <td style="width:40%;"></td>
+                    <td class="bordered" style="width:35%;">
+                        [INVOICING_DISCOUNT_TTC] :
+                    </td>
+                    <td class="bordered" style="width:25%;" align="right">
+                        {invoice_gross_discount_amount}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:40%;"></td>
+                    <td class="bordered" style="width:35%;">
+                        [INVOICING_COMMON_TAX] :
+                    </td>
+                    <td class="bordered" style="width:25%;" align="right">
+                        {invoice_tax_amount}
+                    </td>
+                </tr>
+                <tr class="totalRow">
+                    <td style="width:40%;"></td>
+                    <td class="bordered" style="width:35%;">
+                        [INVOICING_COMMON_AMOUNT_WITH_TAX] :
+                    </td>
+                    <td class="bordered" style="width:25%;" align="right">
+                        {invoice_gross_amount}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="notesCont">
+        <h5>[INVOICING_INVOICE_NOTES] :</h5>
+        <p>{invoice_notes}</p>
+    </div>
+</page>

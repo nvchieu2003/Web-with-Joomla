@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+	<name>Morfeo video</name>
+	<author>BestJoomlaModules</author>
+	<creationDate>2012</creationDate>
+	<copyright>Copyright (C) 2012 BestJoomlaModules</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GPL2</license>
+	<authorEmail>sales@webpsilon.com</authorEmail>
+	<authorUrl>www.bestjoomlamodules.com</authorUrl>
+	<version>3.1</version>
+	<description>Play flv video files and YouTube videos. Enter the path of the video and ready. Manual and help: BESTJOOMLAMODULES.COM</description>
+	<files>
+	<filename module="mod_morfeo_video">mod_morfeo_video.php</filename>
+	 <filename>helper.php</filename>
+	 <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+		  <filename>tmpl/mod_morfeo_video.swf</filename>
+		  <filename>tmpl/Mobile_Detect.php</filename>
+		  <filename>img/next2.png</filename>
+		   <filename>img/prev2.png</filename>
+		    <filename>img/play2.png</filename>
+			 <filename>img/play.png</filename>
+			 <filename>img/index.html</filename>
+			 <filename>js/jquery.js</filename>
+			  <filename>js/index.html</filename>
+		  
+ 
+
+	</files>
+	<config>
+	<fields name="params">
+
+<fieldset name="basic">
+
+
+
+
+		<field name="video" type="textarea" cols="50" rows="10" default="http://www.youtube.com/watch?v=9I9Ar6upx34" label="Url video(flv url, youtube ID or youtube url). Separated by backspace" description="" />	
+		<field name="titles" type="textarea" cols="50" rows="10" default="" label="Video titles. Separated by backspace" description="" />	
+		
+		<field name="images" type="textarea" cols="50" rows="10" default="" label="URL Thumbnail images." description="" />
+		
+		<field name="descriptions" type="textarea" cols="50" rows="10" default="" label="Thumbnail descriptions." description="" />
+			
+		<field name="dates" type="textarea" cols="50" rows="10" default="" label="Thumbnail subdescription(text above the title)." description="" />	
+		
+		
+		<field name="width" type="text" default="100%" label="Module width(samples: 100% or 400px)" description="width ex: 500px" />
+		
+		<field name="height" type="text" default="600px" label="Module height(sample: 400px)" description="height ex: 400px" />		
+		<field name="tumb" type="text" default="50" label="% Video Thumbnails space in module" description="" />		
+		<field name="round" type="text" default="20" label="Video Thumbnails Round" description="" />
+		
+				<field name="sizethumbnail" type="list" default="0" label="Thumbnail text design options" description="">
+			
+			<option value="0">All width</option>
+			<option value="1">1/2 width, right</option>
+			<option value="2">1/2 width, left</option>
+			<option value="3">1/2 height</option>
+		</field>
+		
+		<field name="op1" type="list" default="0" label="Image thumbnail design options" description="">
+			
+			<option value="0">All width, all height</option>
+			<option value="1">1/2 width, left</option>
+			<option value="2">1/2 width, right</option>
+			<option value="3">1/2 height</option>
+		</field>
+			
+		<field name="controls" type="list" default="0" label="Video Mode" description="">
+			
+			<option value="0">normal</option>
+			<option value="4">DARKEN</option>
+			<option value="5">DIFFERENCE</option>
+			<option value="7">HARDLIGHT</option>
+			<option value="8">LAYER</option>
+			<option value="10">MULTIPLY</option>
+			<option value="12">SHADER</option>
+			<option value="13">SUBTRACT</option>
+
+		</field>
+		
+
+
+
+	
+		<field name="skin" type="list" default="1" label="Skin Player Mode">
+			<option value="">None</option>
+			<option value="1">All</option>
+			<option value="2">Fullscreen button</option>
+			<option value="3">Sound button</option>
+			<option value="4">Seek button</option>
+			<option value="5">Fullscreen and sound button</option>
+			<option value="6">Fullscreen and seek button</option>
+			<option value="7">Seek and sound button</option>
+
+		</field>
+		
+			<field name="columns" type="text" default="3" label="Video Thumbnails columns" description="" />
+			<field name="rows" type="text" default="3" label="Video Thumbnails rows" description="" />
+			
+			
+			
+			
+			<field name="op2" type="list" default="0" label="Text font align" description="">
+					<option value="0">Center</option>
+			        <option value="1">Left</option>
+                     <option value="2">Right</option>
+                     <option value="3">Justify</option>
+		</field>
+		
+		<field name="op3" type="text" default="Arial" label="Font name:" description="Sample: Arial, Verdana" />
+		
+		<field name="tborder" type="text" default="16" label="Title font Size" description="" />
+		
+		<field name="font" type="text" default="12" label="Description font Size" description="" />
+
+	
+		
+
+		<field name="color1" type="text" default="222222" label="Background color" description="color format white: ffffff" />
+		<field name="color2" type="text" default="ffffff" label="Buttons color" description="" />
+		<field name="color3" type="text" default="ffffff" label="Title color" description="" />
+		<field name="time" type="text" default="dddddd" label="Description color" description="" />
+		<field name="op4" type="text" default="222222" label="Shadow color" description="" />
+		
+		<field name="autoplay" type="list" default="1" label="Autoplay?" description="">
+			<option value="0">Off</option>
+			<option value="1">On</option>
+		</field>	
+		
+
+		
+		<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="fieldMODULECLASSSUFFIX" />
+
+
+		
+</fieldset>
+	</fields>
+	</config>
+</extension>

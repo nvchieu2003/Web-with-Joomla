@@ -1,0 +1,117 @@
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+		  <tbody>
+          <tr valign="top"> 
+				<td colspan="1" align="left">
+		    	<strong>{vendor_company_name}</strong><br/>
+				{vendor_contact_name}<br/>
+		    	{vendor_company_email}<br/>
+		    	{vendor_company_phone}<br/>
+		    	{vendor_company_url}<br/>
+		    	{vendor_address1}<br/>
+		    	{vendor_address2}<br/>
+		    	{vendor_city}
+		    	{vendor_country}
+		    	</td>
+                <td colspan="4">
+		    	<a href="{url_site}" target="_blank"><img style="max-width : 300px;max-height : 300px" class="logo_vendor" alt="logo" src="{vendor_logo}" /></a>
+		        </td>
+		  </tr>
+          
+          <tr bgcolor="#CCCCCC"> 
+		    <td colspan="6"><b>[INVOICING_QUOTE_INFORMATION]</b></td>
+		  </tr>
+		  <tr> 
+		    <td>[INVOICING_CONFIG_QUOTE_NUMBER_COUNTER]</td><td colspan="4">{quote_number}</td>
+		  </tr>
+		  <tr> 
+		    <td>[INVOICING_COMMON_DATE]</td><td colspan="4">{quote_date}</td>
+		  </tr>
+		  <tr>
+		    <td colspan="6">&nbsp;</td>
+		  </tr>
+		  <tr bgcolor="#CCCCCC"> 
+		    <td colspan="6"><b>[INVOICING_CUSTOMER_INFORMATION]</b></td>
+		  </tr>
+				<tr> 
+		          <td>[INVOICING_INVOICE_USER_ID]</td>
+		          <td colspan="4">{customer_id}</td>
+		        </tr>
+		        <tr> 
+		          <td>[INVOICING_COMMON_MAIL]</td>
+		          <td colspan="4"><a href="mailto:{customer_email}" target="_blank">{customer_name}</a></td>
+		        </tr>
+		         <tr> 
+		          <td>[INVOICING_COMMON_NAME]</td>
+		          <td colspan="4">{customer_name}</td>
+		        </tr>  	
+						         <tr> 
+		          <td>[INVOICING_USER_OCCUPATION]</td>
+		          <td colspan="4">{customer_occupation}</td>
+		        </tr>  	
+						         <tr> 
+		          <td>[INVOICING_COMMON_ADDRESS1]</td>
+		          <td colspan="4">{customer_address1}</td>
+		        </tr>  	
+						         <tr> 
+		          <td>[INVOICING_COMMON_ADDRESS1]</td>
+		          <td colspan="4">{customer_address2}</td>
+		        </tr>  	
+						         <tr> 
+		          <td>[INVOICING_COMMON_CITY]</td>
+		          <td colspan="4">{customer_city}</td>
+		        </tr>  	
+				<tr> 
+		          <td>[INVOICING_COMMON_ZIP]</td>
+		          <td colspan="4">{customer_zip}</td>
+		        </tr>  			         <tr> 
+		          <td>[INVOICING_COMMON_COUNTRY]</td>
+		          <td colspan="4">{customer_country}</td>
+		        </tr>  	
+		  <tr> 
+		    <td colspan="6">&nbsp;</td>
+		  </tr>
+		  <tr bgcolor="#CCCCCC"> 
+		    <td colspan="6"><b>[INVOICING_ORDER_ITEMS]</b></td>
+		  </tr>
+		  <tr>
+          	<td align="left" width="50%" valign="top">[INVOICING_COMMON_DESCRIPTION]</td>
+            <td align="left" width="10%" valign="top">[INVOICING_COMMON_UNIT_PRICE]</td>
+			<td align="left" width="10%" valign="top">[INVOICING_COMMON_QUANTITY]</td>
+            <td align="left" width="10%" valign="top">[INVOICING_COMMON_TAX]</td>
+            <td align="left" width="10%" valign="top">[INVOICING_COMMON_UNIT_PRICE]</td>
+          </tr>
+          {item_start}
+          <tr>
+          	<td align="left" width="50%" valign="top">{item_name}</td>
+            <td align="left" width="10%" valign="top">{item_net_unit_price}</td>
+			<td align="left" width="10%" valign="top">{item_quantity}</td>
+        	<td align="left" width="10%" valign="top">{item_tax}</td>
+      		<td align="left" width="10%" valign="top">{item_net_amount}</td>
+         </tr>
+         {item_end}
+         <tr>
+       		<td align="right" width="90%" valign="top" colspan="4">[INVOICING_DISCOUNT_TTC] :</td>
+       		<td align="left" width="10%" valign="top">{quote_gross_discount_amount}</td>
+         </tr>
+       	 <tr>
+       		<td align="right" width="90%" valign="top" colspan="4">[INVOICING_COMMON_AMOUNT_WITHOUT_TAX] :</td>
+       		<td align="left" width="10%" valign="top">{quote_net_amount}</td>
+         </tr>
+         <tr>
+         	<td align="right" width="90%" valign="top" colspan="4">[INVOICING_COMMON_TAX] :</td>
+         	<td align="left" width="10%" valign="top">{quote_tax_amount}</td>
+         </tr>
+         <tr>
+         	<td align="right" width="90%" valign="top" colspan="4">[INVOICING_COMMON_AMOUNT_WITH_TAX] :</td>
+         	<td align="left" width="10%" valign="top">{quote_gross_amount}</td>
+         </tr>	
+		 <tr>
+         	<td align="left" style="background-color:#D6D6D6;" colspan="6">
+            <h4 style="margin:0px;">[INVOICING_INVOICE_NOTES]</h4>
+            </td>
+         </tr>
+		  <tr>
+         	<td align="left" width="10%" valign="top" colspan="5">{quote_notes}<br/>{quote_coupon}</td>
+         </tr>	
+		</tbody>
+	</table>

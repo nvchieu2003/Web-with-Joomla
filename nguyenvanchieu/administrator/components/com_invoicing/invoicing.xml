@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>invoicing</name>
+	<author>TomPAP (joomprod.com)</author>
+	<creationDate>June 2015</creationDate>
+	<copyright>
+		Copyright (C) 2010-2012 JoomPROD. All rights reserved.
+	</copyright>
+	<license>GNU GPL v3 or later</license>
+	<authorEmail>support@juloa.com</authorEmail>
+	<authorUrl>www.joomprod.com</authorUrl>
+	<version>3.2</version>
+	<description>Invoicing</description>
+	
+	<!-- Public front end files -->
+	<files folder="frontend">
+		<filename>invoicing.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<filename>index.html</filename>
+		<folder>views</folder>
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>lib</folder>
+	</files>
+	
+	<!-- Media files -->
+    <media destination="com_invoicing" folder="media">
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+		<folder>tcpdf</folder>
+    </media>
+    
+    <!-- SQL query files to execute on installation -->
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install/mysql/install.sql</file>
+            <file driver="mysql">sql/install/mysql/install.sql</file>
+		</sql>
+	</install>
+	
+	<!-- Front end translation files -->
+	<languages folder="translations/frontend">
+			<language tag="en-GB">en-GB.com_invoicing.ini</language>
+			<language tag="fr-FR">fr-FR.com_invoicing.ini</language>
+	</languages>
+	
+	
+	<!-- Administrator back-end section -->
+	<administration>
+		<!-- Administration menu -->
+		<menu link="option=com_invoicing&amp;c=cpanel">COM_INVOICING</menu>
+		<submenu>
+			<menu 
+				link="option=com_invoicing&amp;c=invoices"
+				view="invoices" 
+				alt="Invoicing/Invoices"
+			>
+				COM_INVOICING_INVOICES
+			</menu>
+			<menu 
+				link="option=com_invoicing&amp;c=quotes"
+				view="quotes" 
+				alt="Invoicing/Quotes"
+			>
+				COM_INVOICING_QUOTES
+			</menu>
+			<menu 
+				link="option=com_invoicing&amp;c=coupons" 
+				view="coupons"  
+				alt="Invoicing/Coupons"
+			>
+				COM_INVOICING_COUPONS
+			</menu>
+			<menu 
+				link="option=com_invoicing&amp;c=users" 
+				view="clients"
+				alt="Invoicing/Clients"
+			>
+				COM_INVOICING_CLIENTS
+			</menu>
+			<menu 
+				link="option=com_invoicing&amp;c=vendors" 
+				view="vendors" 
+				alt="Invoicing/Vendors"
+			>
+				COM_INVOICING_VENDORS
+			</menu>
+			<menu 
+				link="option=com_invoicing&amp;c=references"            
+				view="references" 
+				alt="Invoicing/References"
+			>
+				COM_INVOICING_REFERENCES
+			</menu>
+			<menu 
+				link="option=com_invoicing&amp;c=currencies" 
+				view="currencies" 
+				alt="Invoicing/Currencies"
+			>
+				COM_INVOICING_CURRENCIES
+			</menu>
+			<menu 
+				link="option=com_invoicing&amp;c=taxes" 
+				view="taxes" 
+				alt="Invoicing/Taxes"
+			>
+				COM_INVOICING_TAXES
+			</menu>
+			<menu 
+				link="option=com_invoicing&amp;c=emails" 
+				view="emails" 
+				alt="Invoicing/Emails"
+			>
+				COM_INVOICING_EMAILS
+			</menu>
+			<menu 
+				link="option=com_invoicing&amp;c=templates" 
+				view="templates" 
+				alt="Invoicing/Templates"
+			>
+				COM_INVOICING_TEMPLATES
+			</menu>
+			<menu 
+				link="option=com_invoicing&amp;c=log&amp;task=add" 
+				view="log" 
+				alt="Invoicing/Log"
+			>
+				COM_INVOICING_LOG
+			</menu>
+		</submenu>
+
+		<!-- Back-end files -->
+		<files folder="backend">
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<filename>invoicing.php</filename>
+
+			<folder>assets</folder>
+			<folder>css</folder>
+			<folder>controllers</folder>
+			<folder>doc</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>templates</folder>
+			<folder>views</folder>
+		</files>
+
+		<!-- Back-end translation files -->
+		<languages folder="translations/backend">
+			<language tag="en-GB">en-GB.com_invoicing.ini</language>
+			<language tag="en-GB">en-GB.com_invoicing.menu.ini</language>
+			<language tag="en-GB">en-GB.com_invoicing.sys.ini</language>
+			<language tag="fr-FR">fr-FR.com_invoicing.ini</language>
+			<language tag="fr-FR">fr-FR.com_invoicing.menu.ini</language>
+			<language tag="fr-FR">fr-FR.com_invoicing.sys.ini</language>
+		</languages>
+	</administration>
+
+	<!-- Installation / uninstallation PHP scripts -->
+	<scriptfile>script.com_invoicing.php</scriptfile>
+</extension>

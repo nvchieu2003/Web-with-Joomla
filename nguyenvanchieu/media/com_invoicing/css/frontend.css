@@ -1,0 +1,142 @@
+body {
+margin : 0;
+}
+
+/* Error display with validate.js */
+label.error{
+color : #B94A48;
+}
+
+input.required {
+border-color: #B94A48;
+}
+
+
+#send_pic_actions{
+  float : left;
+  background-image: url(../images/invoices/icon-32-messaging.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+#see_pic_actions{
+  float : left;
+  background-image: url(../images/invoices/icon-32-article.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+#pdf_pic_actions{
+  float : left;
+  background-image: url(../images/invoices/pdf.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+#pay_pic_actions{
+  float : left;
+  background-image: url(../images/invoices/payment-icon32.png);
+  background-position: 0px 0x;
+  width: 32px;
+  height: 32px;
+}
+
+#print_pic_actions{
+  position : absolute;
+  right : 0px;
+  background-image: url("../images/invoices/icon-32-print.png");
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+#pic_actions {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px; 
+}
+
+#seeInvoiceLink {
+font-weight:bold;
+font-size : 15px;
+display : block;
+}
+
+#mailInvoice {
+font-weight:bold;
+font-size : 15px;
+display : block;
+}
+
+.icon-48-invoicing {
+    background: url("../images/logo.png") no-repeat scroll 0 0 transparent !important;
+}
+
+.paymentmethod_img span {
+    font-size: 16px;
+    font-weight: bold;
+    left: 100px;
+    position: absolute;
+    top: 0;
+}
+
+.paymentmethod_img_ul {
+	margin:0 !important;
+}
+
+.paymentmethod_img {
+    display: inline-block;
+    list-style: none outside none;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    margin-top: 5px;
+}
+
+
+.paymentmethod_img > a {
+    position: relative;
+}
+
+/**
+ * PAYMENT METHOD
+**/
+.paymentImg, .paymentTxt, .paymentTxt2L{
+    float: left;
+}
+.paymentImg{
+    border-right: 1px solid #e0e0e0;
+}
+.paymentMeth:hover{
+    border: 1px solid #16a4ec;
+}
+.paymentMeth{
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+.paymentTxt{
+    color: #3e3e3e;
+    border-left: none;
+    padding-top: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.paymentTxt:hover{
+    color: #16a4ec;
+}
+.paymentTxt2L{
+    color: #3e3e3e;
+    height: 80px;
+    border-left: none;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.paymentTxt2L small{
+    color: #16a4ec;
+}
+.paymentTxt2L:hover{
+    color: #16a4ec;
+}

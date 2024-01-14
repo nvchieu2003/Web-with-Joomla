@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>EXT Custom HTML-code</name>
+	<author>Eco-Joom.com</author>
+	<creationDate>05/05/2020</creationDate>
+	<copyright>Copyright (C) 2011-2020 Eco-Joom.com. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>v.v.makeev@icloud.om</authorEmail>
+	<authoralt>http://www.eco-joom.com/en/</authoralt>
+	<version>2.3</version>
+	<description>The module displays on the site of any HTML-code. Allows you to insert CSS / JS in the head.</description>
+	
+	<files>	
+		<filename module="mod_ext_custom">mod_ext_custom.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_ext_custom.php</filename>
+		<filename>mod_ext_custom.xml</filename>  
+		<folder>tmpl</folder>	
+    </files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_ext_custom.ini</language>
+		<language tag="en-GB">en-GB.mod_ext_custom.sys.ini</language>
+		<language tag="ru-RU">ru-RU.mod_ext_custom.ini</language>
+		<language tag="ru-RU">ru-RU.mod_ext_custom.sys.ini</language>		
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">			
+				
+				<field 
+					name="html" 
+					type="textarea"
+					filter="raw" 
+					default="" 
+					label="MOD_EXT_CUSTOM_FIELD_HTML_LABEL" 
+					description="MOD_EXT_CUSTOM_FIELD_HTML_DESC" 
+					rows="32" 
+					cols="40"/>
+				<field 
+					type="spacer" 
+					label="MOD_EXT_CUSTOM_FIELD_SPACER_LABEL" />	
+				<field 
+					name="css" 
+					type="textarea"
+					filter="raw" 
+					default="" 
+					label="MOD_EXT_CUSTOM_FIELD_CSS_LABEL" 
+					description="MOD_EXT_CUSTOM_FIELD_CSS_DESC" 
+					rows="32" 
+					cols="40"/>
+					
+				<field 
+					name="js" 
+					type="textarea"
+					filter="raw" 
+					default="" 
+					label="MOD_EXT_CUSTOM_FIELD_JS_LABEL" 
+					description="MOD_EXT_CUSTOM_FIELD_JS_DESC" 
+					rows="32" 
+					cols="40"/>
+					
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+					
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

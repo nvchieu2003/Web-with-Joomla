@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="invoicingpayment" method="upgrade" client="site">
+	<name>Invoicing Paypal Payment Plugin</name>
+	<creationDate>June 2015</creationDate>
+	<version>3.2</version>
+	<author>JoomPROD</author>
+	<authorEmail>support@juloa.com</authorEmail>
+	<authorUrl>http://www.joomprod.com</authorUrl>
+	<copyright>Copyright (C) 2010-2012 JoomPROD - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>This plugin enables you to setup your Paypal payment system</description>
+	<files>
+		<filename plugin="paypal">paypal.php</filename>
+		<filename>paypal.xml</filename>
+		<folder>paypal</folder>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_invoicingpayment_paypal.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_invoicingpayment_paypal.sys.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.plg_invoicingpayment_paypal.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.plg_invoicingpayment_paypal.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="title" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_TITLE_LABEL" description="PLG_INVOICINGPAYMENT_TITLE_DESC"/>
+				<field name="image" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_IMAGE_LABEL" description="PLG_INVOICINGPAYMENT_IMAGE_DESC" />
+				<field type="spacer" />
+				<field name="merchant" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_PAYPAL_MERCHANT_LABEL" description="PLG_INVOICINGPAYMENT_PAYPAL_MERCHANT_DESC"/>
+                <field type="spacer" />
+                <field name="sandbox" type="radio" default="0" label="PLG_INVOICINGPAYMENT_PAYPAL_SANDBOX_LABEL" description="PLG_INVOICINGPAYMENT_PAYPAL_SANDBOX_DESC">
+                  <option value="0">JNo</option>
+                  <option value="1">JYes</option>
+                </field>
+                <field name="sandbox_merchant" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_PAYPAL_SANDBOX_MERCHANT_LABEL" description="PLG_INVOICINGPAYMENT_PAYPAL_SANDBOX_MERCHANT_LABEL"/>
+                <field type="spacer" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

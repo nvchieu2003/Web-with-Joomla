@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" group="invoicingpayment" method="upgrade" client="site">
+	<name>Invoicing HiPAY Payment Plugin</name>
+	<creationDate>October 2013</creationDate>
+	<version>2.9.4</version>
+	<author>Juloa</author>
+	<authorEmail>support@juloa.com</authorEmail>
+	<authorUrl>http://www.joomprod.com</authorUrl>
+	<copyright>Copyright (C) 2010-2013 Juloa - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>This plugin enables you to setup your HiPAY payment system</description>
+	<files>
+		<filename plugin="hipay">hipay.php</filename>
+		<filename>hipay.xml</filename>
+		<folder>hipay</folder>
+		<filename>index.html</filename>
+	</files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="title" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_TITLE_LABEL" description="PLG_INVOICINGPAYMENT_TITLE_DESC"/>
+				<field name="image" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_IMAGE_LABEL" description="PLG_INVOICINGPAYMENT_IMAGE_DESC" />
+				<field type="spacer" />
+				<field name="loginID" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_HIPAY_LOGINID" description="PLG_INVOICINGPAYMENT_HIPAY_LOGINID_DESC"/>
+                <field name="account" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_HIPAY_ACCOUNT" description="PLG_INVOICINGPAYMENT_HIPAY_ACCOUNT_DESC"/>
+                <field name="password" type="password" size="50" default="" label="PLG_INVOICINGPAYMENT_HIPAY_PASSWORD" description="PLG_INVOICINGPAYMENT_HIPAY_PASSWORD_DESC"/>
+                <field name="locale" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_HIPAY_LOCALE" description="PLG_INVOICINGPAYMENT_HIPAY_LOCALE_DESC"/>
+                <field name="rating" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_HIPAY_RATING" description="PLG_INVOICINGPAYMENT_HIPAY_RATING_DESC"/>
+                <field name="currency" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_HIPAY_CURRENCY" description="PLG_INVOICINGPAYMENT_HIPAY_CURRENCY_DESC"/>
+                <field name="siteID" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_HIPAY_SITEID" description="PLG_INVOICINGPAYMENT_HIPAY_SITEID_DESC"/>
+                <field name="emailAck" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_HIPAY_EMAILACK" description="PLG_INVOICINGPAYMENT_HIPAY_EMAILACK_DESC"/>
+                <field name="categoryId" type="text" size="50" default="" label="PLG_INVOICINGPAYMENT_HIPAY_CATEGORYID" description="PLG_INVOICINGPAYMENT_HIPAY_CATEGORYID_DESC"/>
+                <field type="spacer" />
+                <field name="sandbox" type="radio" default="0" label="PLG_INVOICINGPAYMENT_PAYPAL_SANDBOX_LABEL" description="PLG_INVOICINGPAYMENT_PAYPAL_SANDBOX_DESC">
+                  <option value="0">JNo</option>
+                  <option value="1">JYes</option>
+                </field>
+                <field type="spacer" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

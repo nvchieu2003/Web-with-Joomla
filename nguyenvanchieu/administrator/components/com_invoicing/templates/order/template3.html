@@ -1,0 +1,46 @@
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+	  <tr bgcolor="#CCCCCC"> 
+	    <td colspan="6"><b>[INVOICING_ORDER_ITEMS]</b></td>
+	  </tr>
+	  <tr>
+         	<td align="left" width="50%" valign="top">[INVOICING_COMMON_DESCRIPTION]</td>
+           <td align="left" width="10%" valign="top">[INVOICING_COMMON_UNIT_PRICE]</td>
+		<td align="left" width="10%" valign="top">[INVOICING_COMMON_QUANTITY]</td>
+           <td align="left" width="10%" valign="top">[INVOICING_COMMON_TAX]</td>
+           <td align="left" width="10%" valign="top">[INVOICING_COMMON_UNIT_PRICE]</td>
+         </tr>
+         {item_start}
+         <tr>
+         	<td align="left" width="50%" valign="top">{item_name}</td>
+           <td align="left" width="10%" valign="top">{item_net_unit_price}</td>
+		<td align="left" width="10%" valign="top">{item_quantity}</td>
+       	<td align="left" width="10%" valign="top">{item_tax}</td>
+     		<td align="left" width="10%" valign="top">{item_net_amount}</td>
+        </tr>
+        {item_end}
+        <tr>
+      		<td align="right" width="90%" valign="top" colspan="4">[INVOICING_DISCOUNT_TTC] :</td>
+      		<td align="left" width="10%" valign="top">{invoice_gross_discount_amount}</td>
+        </tr>
+      	 <tr>
+      		<td align="right" width="90%" valign="top" colspan="4">[INVOICING_COMMON_AMOUNT_WITHOUT_TAX] :</td>
+      		<td align="left" width="10%" valign="top">{invoice_net_amount}</td>
+        </tr>
+        <tr>
+        	<td align="right" width="90%" valign="top" colspan="4">[INVOICING_COMMON_TAX] :</td>
+        	<td align="left" width="10%" valign="top">{invoice_tax_amount}</td>
+        </tr>
+        <tr>
+        	<td align="right" width="90%" valign="top" colspan="4">[INVOICING_COMMON_AMOUNT_WITH_TAX] :</td>
+        	<td align="left" width="10%" valign="top">{invoice_gross_amount}</td>
+        </tr>	
+	 <tr>
+        	<td align="left" style="background-color:#D6D6D6;" colspan="6">
+           <h4 style="margin:0px;">[INVOICING_INVOICE_NOTES]</h4>
+           </td>
+        </tr>
+	  <tr>
+        	<td align="left" width="10%" valign="top" colspan="5">{invoice_notes}<br/>{invoice_coupon}</td>
+        </tr>	
+	</tbody>
+</table>

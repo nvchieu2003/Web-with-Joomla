@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="sh404sefextplugins"	method="upgrade" client="site">
+	<name>sh404sef - Invoicing support plugin</name>
+	<author>Juloa.com</author>
+	<creationDate>June 2015</creationDate>
+	<copyright>2012 Juloa.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>support@juloa.com</authorEmail>
+	<authorUrl>www.joomprod.com</authorUrl>
+	<version>2.7</version>
+	<description>Provide default support for sef urls and meta data</description>
+	<files>
+		<filename plugin="sh404sefextplugincom_invoicing">sh404sefextplugincom_invoicing.php</filename>
+		<folder plugin="sh404sefextplugincom_invoicing">invoicing</folder>
+	</files>
+</extension>

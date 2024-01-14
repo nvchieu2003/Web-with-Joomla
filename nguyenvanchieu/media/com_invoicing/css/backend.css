@@ -1,0 +1,251 @@
+body {
+margin : 0;
+}
+
+#invoice-container {
+width : 90%;
+min-width:900px;
+margin-left : auto;
+margin-right : auto;
+}
+
+#details {
+float : left;
+width : 45%;
+}
+
+#contacts {
+float : right;
+width : 45%;
+}
+
+#products {
+clear : both;
+}
+
+#discount {
+clear : both;
+}
+
+#notes {
+float : left;
+width : 400px;
+}
+
+#total {
+float : right;
+width : 400px;
+}
+
+legend {
+color : blue;
+font-size : 1.1em;
+}
+
+ul {
+list-style-type : none;
+}
+
+#sort td {
+padding : 50 50;
+}
+
+#subtotal {
+float : right;
+}
+
+.sendMailToClient {
+display : none;
+}
+
+.PDFAttachment {
+display : none;
+}
+
+/* Fixes for display */
+.hideToAdjust {
+visibility : hidden;
+}
+
+.logo_vendor {
+max-width : 150px;
+max-height : 150px;
+}
+
+/* Error display with validate.js */
+label.error{
+color : #B94A48;
+}
+
+input.required {
+border-color: #B94A48;
+}
+
+
+#send_pic_actions{
+  float : left;
+  background-image: url(../images/invoices/icon-32-messaging.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+#see_pic_actions{
+  float : left;
+  background-image: url(../images/invoices/icon-32-article.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+#pdf_pic_actions{
+  float : left;
+  background-image: url(../images/invoices/pdf.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+#quotetoinvoice_pic_actions{
+    float : left;
+    background-image: url(../images/invoices/icon-32-stats.png);
+    background-position: 0px 0px;
+    width: 32px;
+    height: 32px;
+}
+
+#pay_pic_actions{
+  float : left;
+  background-image: url(../images/invoices/payment-icon32.png);
+  background-position: 0px 0x;
+  width: 32px;
+  height: 32px;
+}
+
+#print_pic_actions{
+  position : absolute;
+  right : 0px;
+  background-image: url("../images/invoices/icon-32-print.png");
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+#pic_actions {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px; 
+}
+
+#pic_actions_quote {
+  margin-left: auto;
+  margin-right: auto;
+  width: 128px; 
+}
+
+.ui-icon-cancel:hover {
+	cursor:pointer	
+}
+
+.icon-48-invoicing {
+    background: url("../images/logo.png") no-repeat scroll 0 0 transparent !important;
+}
+
+#filterDiv {
+position : absolute;
+left : 500px;
+}
+
+#seeInvoiceLink {
+font-weight:bold;
+font-size : 15px;
+display : block;
+}
+
+#mailInvoice {
+font-weight:bold;
+font-size : 15px;
+display : block;
+}
+
+
+/* STATS PAGE */
+#leftcolumn {
+	float:left;
+	width:60%;
+}
+
+#rightcolumn {
+    float: left;
+    padding-left: 5%;
+    width: 35%;
+}
+#dailychart {
+	width : 100%;
+}
+#pendingorders {
+	margin-bottom: 40px; padding: 20px; border: 1px solid rgb(2, 90, 141); color: rgb(2, 90, 141);
+}
+
+#monthlychart {
+	width : 100%;
+}
+
+#filter1 {
+	//width : 25%;
+	//position : absolute;
+	//left : 25%;
+	//top : 45%;
+	//background-color : #17BDB8;
+}
+
+/* PAGE TEMPLATE */
+#template_tags {
+	//background-color : AliceBlue ;
+	float : right;
+	width : 20%;
+}
+#template_description {
+	//background-color : AntiqueWhite ;
+}
+#template_usehtmlforpdf {
+	//background-color : Aqua  ;
+	text-align : center;
+}
+#template_htmlcontent {
+	//background-color : Aquamarine   ;
+}
+#template_htmlcontent_textarea > textarea {
+	//background-color : Azure    ;
+	width: 78%; 
+	height: 250px;
+}
+#template_htmlbutton {
+	//background-color : Beige   ;
+}
+
+#template_pdfcontent {
+	//background-color : Bisque    ;
+}
+#template_pdfcontent_textarea  > textarea {
+	//background-color : Azure    ;
+	width: 78%; 
+	height: 250px;
+}
+
+#template_pdfbutton {
+	//background-color : Lavender    ;
+}
+
+.templatelink  {
+	display : inline-block;
+	text-align : center;
+	background-color :red;
+	margin-top : 10px;
+}
+
+#container-templates {
+	width : 80%;
+	position : relative;
+	left : 10%;
+}
